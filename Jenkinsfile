@@ -29,9 +29,9 @@ pipeline {
                 echo "Stop catalina"
                 sh '''
 
-                  cd $ROOT_PATH
+                  cd ${ROOT_PATH}/bin/
                   pwd
-                  ./bin/catalina.bat stop
+                  catalina.bat stop
 
                 '''
 
