@@ -14,7 +14,7 @@ pipeline {
                 
                 echo "generating war file"
                 sh "cd ${TEMP_DIR}"
-                echo "${TEMP_DIR}"
+                sh "pwd"
                 bat "mvn clean package"
                 sh "cd .."
             }
