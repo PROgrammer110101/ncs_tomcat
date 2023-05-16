@@ -31,7 +31,7 @@ pipeline {
 
                   cd $ROOT_PATH
                   pwd
-                  ./bin/catalina.sh stop
+                  ./bin/catalina.bat stop
 
                 '''
 
@@ -59,7 +59,7 @@ pipeline {
 
                   cd $ROOT_PATH
                   pwd
-                  nohup bin/catalina.sh start &
+                  nohup bin/catalina.bat start &
 
                 '''
            }
