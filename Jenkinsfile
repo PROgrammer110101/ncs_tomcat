@@ -54,6 +54,7 @@ pipeline {
        stage('Start Catalina') {
            steps {
                echo "Start catalina"
+               echo "pwd"
                 sh '''
 
                   cd $ROOT_PATH
