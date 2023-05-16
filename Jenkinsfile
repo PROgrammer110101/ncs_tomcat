@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        ROOT_PATH  =  "/apache-tomcat-9.0.58"
+        ROOT_PATH  =  "Apache Software Foundation/Tomcat 10.1"
         APP_PATH   =  "$ROOT_PATH/webapps"
         TEMP_DIR   =  "${env.WORKSPACE}/web-thymeleaf-war"
     }
@@ -55,10 +55,9 @@ pipeline {
        stage('Start Catalina') {
            steps {
                echo "Start catalina"
-                // cd $ROOT_PATH
                 sh '''
 
-                  cd "C:/Program Files/Apache Software Foundation/Tomcat 10.1"
+                  cd $ROOT_PATH
                   pwd
                   nohup bin/catalina.sh start &
 
