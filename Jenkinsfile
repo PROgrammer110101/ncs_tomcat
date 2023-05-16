@@ -58,7 +58,7 @@ pipeline {
                 // cd $ROOT_PATH
                 sh '''
 
-                  cd "C:\Program Files\Apache Software Foundation\Tomcat 10.1"
+                  cd "C:/Program Files/Apache Software Foundation/Tomcat 10.1"
                   pwd
                   nohup bin/catalina.sh start &
 
