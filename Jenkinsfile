@@ -17,7 +17,6 @@ pipeline {
                     // Clean and build using Maven
                     bat "mvn clean package"
                 }
-                sh "cd .."
             }
         }
         stage('Test') {
