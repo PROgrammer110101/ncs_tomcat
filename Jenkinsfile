@@ -15,6 +15,7 @@ pipeline {
                 echo "generating war file"
                 sh "cd ${TEMP_DIR}"
                 bat "mvn clean package"
+                sh "cd .."
             }
         }
         stage('Test') {
