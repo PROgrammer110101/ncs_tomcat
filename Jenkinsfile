@@ -55,9 +55,10 @@ pipeline {
        stage('Start Catalina') {
            steps {
                echo "Start catalina"
+                // cd $ROOT_PATH
                 sh '''
 
-                  cd $ROOT_PATH
+                  cd "C:\Program Files\Apache Software Foundation\Tomcat 10.1"
                   pwd
                   nohup bin/catalina.sh start &
 
